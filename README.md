@@ -45,7 +45,7 @@ IMAGE_FOLDER = "./lab_images"
     * 尽量保证文字方向正确（虽然模型有一定纠正能力）。
     * *注：本项目未提供真实患者数据，请使用自行脱敏的化验单进行测试。*
 
-![](./lab_images/input.png)
+![](./input.png)
 
 ### 5. 运行 (Usage)
 ```bash
