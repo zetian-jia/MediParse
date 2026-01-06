@@ -23,7 +23,7 @@
 
 ### 2. 安装依赖 (Installation)
 ```bash
-git clone https://github.com/your-username/MediParse.git
+git clone https://github.com/zetian-jia/MediParse.git
 cd MediParse
 pip install -r requirements.txt
 ```
@@ -45,6 +45,8 @@ IMAGE_FOLDER = "./lab_images"
     * 尽量保证文字方向正确（虽然模型有一定纠正能力）。
     * *注：本项目未提供真实患者数据，请使用自行脱敏的化验单进行测试。*
 
+![](./lab_images/input.png)
+
 ### 5. 运行 (Usage)
 ```bash
 python main.py
@@ -54,14 +56,10 @@ python main.py
 ## 📊 输出结果说明 (Output)
 生成的 `batch_results.csv` 包含以下列：
 
-| 列名 | 说明 |
-| :--- | :--- |
-| **Source_File** | 图片来源文件名，用于溯源 |
-| **项目名称** | 检验项目（如：白细胞计数、血红蛋白） |
-| **结果** | 检测数值 |
-| **参考区间** | 化验单上的参考范围 |
-| **单位** | 计量单位（如：10^9/L, g/L） |
-| **异常标记** | 标注高低值（如：High, Low, ↑, ↓） |
+
+![](./out.png)
+
+
 
 ## ⚠️ 注意事项
 * **隐私安全:** 请确保上传的图片不包含患者姓名、身份证号等敏感隐私信息（PII）。建议在处理前对图片头部敏感区域进行裁剪或打码。
