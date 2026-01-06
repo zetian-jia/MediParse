@@ -47,6 +47,8 @@ IMAGE_FOLDER = "./lab_images"
 
 ![](./input.png)
 
+> [ref figure](https://zhuanlan.zhihu.com/p/375012013)
+
 ### 5. 运行 (Usage)
 ```bash
 python main.py
